@@ -8,7 +8,8 @@ namespace _05_ControlStatement
         {
             //ifElse.ifelseExample();
             //SwitchCase.SwitchCaseExample();
-            ForLoop.ForLoopExample();
+            //ForLoop.ForLoopExample();
+            WhileLoop.WhileExample();
         }
     }
 }
