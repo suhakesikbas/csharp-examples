@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
 
 namespace _06_Array
 {
@@ -15,7 +18,7 @@ namespace _06_Array
 
             // Dizilere değer atamam ve erişim
             renkler[0] = "Mavi";
-            dizi[3]=10;
+            dizi[3] = 10;
             Console.WriteLine(hayvanlar[1]);
             Console.WriteLine(dizi[3]);
             Console.WriteLine(renkler[0]);
@@ -33,9 +36,38 @@ namespace _06_Array
 
             int toplam = 0;
             foreach (var sayi in sayiDizisi)
-                toplam+=sayi;
+                toplam += sayi;
 
-            Console.WriteLine("Ortalama : {0}", toplam/diziUzunluk);
+            Console.WriteLine("Ortalama : {0}", toplam / diziUzunluk);
+
+            int[] sayiDizisi = { 23, 2, 4, 86, 72, 3, 11, 17 };
+            Console.WriteLine("****  Sırasız Dizi  ****");
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
+
+            Console.WriteLine("****  Sıralı Dizi  ****");
+            Array.Sort(sayiDizisi);
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
+
+            Console.WriteLine("****  Array Clear  ****");
+            Array.Clear(sayiDizisi, 2, 2);
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
+
+            Console.WriteLine("****  Array Reverse  ****");
+            Array.Reverse(sayiDizisi);
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
+
+            Console.WriteLine("****  Array IndexOf  ****");
+            Console.WriteLine(Array.IndexOf(sayiDizisi, 23));
+
+            Console.WriteLine("****  Array Reverse  ****");
+            Array.Resize<int>(ref sayiDizisi, 9);
+            sayiDizisi[8] = 99;
+            foreach (var sayi in sayiDizisi)
+                Console.WriteLine(sayi);
 
         }
     }
