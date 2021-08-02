@@ -40,33 +40,33 @@ namespace _06_Array
 
             Console.WriteLine("Ortalama : {0}", toplam / diziUzunluk);
 
-            int[] sayiDizisi = { 23, 2, 4, 86, 72, 3, 11, 17 };
+            int[] sayiDizisi2 = { 23, 2, 4, 86, 72, 3, 11, 17 };
             Console.WriteLine("****  Sırasız Dizi  ****");
-            foreach (var sayi in sayiDizisi)
+            foreach (var sayi in sayiDizisi2)
                 Console.WriteLine(sayi);
 
             Console.WriteLine("****  Sıralı Dizi  ****");
-            Array.Sort(sayiDizisi);
-            foreach (var sayi in sayiDizisi)
+            Array.Sort(sayiDizisi2);
+            foreach (var sayi in sayiDizisi2)
                 Console.WriteLine(sayi);
 
             Console.WriteLine("****  Array Clear  ****");
-            Array.Clear(sayiDizisi, 2, 2);
-            foreach (var sayi in sayiDizisi)
+            Array.Clear(sayiDizisi2, 2, 2);
+            foreach (var sayi in sayiDizisi2)
                 Console.WriteLine(sayi);
 
             Console.WriteLine("****  Array Reverse  ****");
-            Array.Reverse(sayiDizisi);
-            foreach (var sayi in sayiDizisi)
+            Array.Reverse(sayiDizisi2);
+            foreach (var sayi in sayiDizisi2)
                 Console.WriteLine(sayi);
 
             Console.WriteLine("****  Array IndexOf  ****");
-            Console.WriteLine(Array.IndexOf(sayiDizisi, 23));
+            Console.WriteLine(Array.IndexOf(sayiDizisi2, 23));
 
             Console.WriteLine("****  Array Reverse  ****");
-            Array.Resize<int>(ref sayiDizisi, 9);
-            sayiDizisi[8] = 99;
-            foreach (var sayi in sayiDizisi)
+            Array.Resize<int>(ref sayiDizisi2, 9);
+            sayiDizisi2[8] = 99;
+            foreach (var sayi in sayiDizisi2)
                 Console.WriteLine(sayi);
 
         }
