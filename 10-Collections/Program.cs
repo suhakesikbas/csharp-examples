@@ -8,7 +8,8 @@ namespace _10_Collections
         static void Main(string[] args)
         {
             //GenericListExample.Example();
-            ArrayListExample.Example();
+            //ArrayListExample.Example();
+            DictionaryExample.Example();
         }
 
     }
