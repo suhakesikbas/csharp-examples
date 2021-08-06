@@ -10,6 +10,8 @@ namespace _11_OOP
             calisan1.CalisanBilgileri();
             Calisan calisan2 = new Calisan("Melek", "Soylu", "IK");
             calisan2.CalisanBilgileri();
+            Calisan calisan3 = new Calisan("Ahmet", "Kavak");
+            calisan3.CalisanBilgileri();
         }
     }
     class Calisan
@@ -17,6 +19,11 @@ namespace _11_OOP
         public string _ad;
         public string _soyad;
         public string _departman;
+        public Calisan(string ad, string soyad)
+        {
+            _ad = ad;
+            _soyad = soyad;
+        }
         public Calisan(string ad, string soyad, string departman)
         {
             _ad = ad;
@@ -28,7 +35,8 @@ namespace _11_OOP
         {
             Console.WriteLine($"Çalışan Bilgileri");
             Console.WriteLine($"Ad Soyad : {_ad} {_soyad}");
-            Console.WriteLine($"Departman: {_departman}");
+            if (!string.IsNullOrEmpty(_departman))
+                Console.WriteLine($"Departman: {_departman}");
         }
 
     }
