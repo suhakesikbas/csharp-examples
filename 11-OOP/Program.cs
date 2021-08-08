@@ -11,7 +11,8 @@ namespace _11_OOP
             //StaticClassAndFields.Example();
             //StructExample.Init();
             //EnumExample.Init();
-            InterfaceExample.Init();
+            //InterfaceExample.Init();
+            Abstract.AbstractExmple.Init();
         }
     }
 }
