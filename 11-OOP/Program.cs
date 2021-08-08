@@ -7,7 +7,8 @@ namespace _11_OOP
         static void Main(string[] args)
         {
             //ConstructorMethod.Example();
-            Encapsulation.Example();
+            //Encapsulation.Example();
+            StaticClassAndFields.Example();
         }
     }
 }
