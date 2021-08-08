@@ -8,7 +8,9 @@ namespace _11_OOP
         {
             //ConstructorMethod.Example();
             //Encapsulation.Example();
-            StaticClassAndFields.Example();
+            //StaticClassAndFields.Example();
+            //StructExample.Init();
+            EnumExample.Init();
         }
     }
 }
