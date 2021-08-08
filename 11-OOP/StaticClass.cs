@@ -7,14 +7,14 @@ namespace _11_OOP
         public static void Example()
         {
             Console.WriteLine("Toplam Personel  : {0}",Personel.PersonelSayisi);
-            Personel personel = new Personel("Hakan","Çalık","IK");
-            personel.PersonelBilgileriYazdir();
+            // Personel personel = new Personel("Hakan","Çalık","IK");
+            // personel.PersonelBilgileriYazdir();
 
-            var toplam = Mat.Toplam(5,3);
-            Console.WriteLine(toplam.ToString());
+            // var toplam = Mat.Toplam(5,3);
+            // Console.WriteLine(toplam.ToString());
 
-            var cikar = Mat.Cikar(10,2);
-            Console.WriteLine(toplam.ToString());
+            // var cikar = Mat.Cikar(10,2);
+            // Console.WriteLine(toplam.ToString());
         }
 
     }
@@ -31,6 +31,11 @@ namespace _11_OOP
         public string Isim { get => isim; set => isim = value; }
         public string Soyisim { get => soyisim; set => soyisim = value; }
         public string Departman { get => departman; set => departman = value; }
+
+        public Personel()
+        {
+            
+        }
 
         static Personel()
         {

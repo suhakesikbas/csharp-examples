@@ -10,7 +10,8 @@ namespace _11_OOP
             //Encapsulation.Example();
             //StaticClassAndFields.Example();
             //StructExample.Init();
-            EnumExample.Init();
+            //EnumExample.Init();
+            InterfaceExample.Init();
         }
     }
 }
